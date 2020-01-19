@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    password: 123456
+    url: jdbc:sqlserver://localhost\SQLEXPRESS:1433;databaseName=gestion_users_ETL
+    username: adamserver
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.SQLServer2012Dialect
+    show-sql: true
+  application:
+    name: backend-security-jwt
